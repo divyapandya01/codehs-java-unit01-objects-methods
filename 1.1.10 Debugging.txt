@@ -1,0 +1,33 @@
+Bug #1
+-Line number: 7
+-Type of error and explain why: Syntax error because System.outprintln is not the correct Java syntax. It should be System.out.println.
+
+Bug #2
+-Line number: 8
+-Type of error and explain why: Syntax error because there is an extra quotation mark after the exclamation point.
+
+Bug #3
+-Line number: 9
+-Type of error and explain why: Logic error because the program is missing the quote about programming and the quote from Donald Knuth. These lines need to be added to produce the expected output.
+
+Bug #4
+-Line number: 9
+-Type of error and explain why: Syntax error because the print statement is missing a semicolon at the end.
+
+Bug #5
+-Line number: 11
+-Type of error and explain why: Syntax error because Syste.out.println is misspelled. It should be System.out.println.
+
+Bug #6
+-Line number: 11
+-Type of error and explain why: Syntax error because -Andrew Hunt is not inside quotation marks. Text that should be printed must be inside quotation marks.
+===========================================
+PART 2: DEBUGGING REFLECTION
+1. What strategies did you use to find the bugs?
+I used the compiler and the error messages to find syntax errors. I also compared the program's output with the expected output to find missing or incorrect lines.
+
+2. What was the most challenging part of the debugging process?
+The most challenging part was figuring out whether an error was caused by incorrect Java syntax or by something missing from the expected output.
+
+3. What will you look out for when you are writing programs in the future?
+I will pay more attention to spelling, quotation marks, parentheses, and semicolons. I will also make sure that my output matches the expected result.
