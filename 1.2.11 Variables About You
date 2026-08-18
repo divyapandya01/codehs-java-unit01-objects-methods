@@ -1,0 +1,17 @@
+public class Variables 
+{
+    public static void main(String[] args)
+    {
+        String Name = "Tracy the Turtle";
+        int luckynumber = 4;
+        boolean morningPerson = true;
+        String favoritesnack = "Goldfish";
+        double favoritesnackprice = 4.99;
+        
+        System.out.println(Name);
+        System.out.println(luckynumber);
+        System.out.println(morningPerson);
+        System.out.println(favoritesnack);
+        System.out.println(favoritesnackprice);
+    }
+}
