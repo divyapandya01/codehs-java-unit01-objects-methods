@@ -1,0 +1,49 @@
+Predict: 
+- Accurate conversions: Conversion #2 and Conversion #4
+- Inaccurate conversions: Conversion #1 and Conversion #3
+
+*****************************
+Run: Were you correct?
+Yes.
+
+*****************************
+Investigate:
+
+-Conversion #1: 
+1. 5 / 9 is evaluated first. Since both 5 and 9 are integers, Java performs integer division, resulting in 0.
+2. 0 * (70 - 32) is evaluated. 70 - 32 equals 38.
+3. 0 * 38 equals 0.
+
+Explanation: 
+The conversion is inaccurate because 5 / 9 uses integer division. Since both numbers are integers, Java rounds the result down to 0 instead of calculating the decimal value.
+
+-Conversion #2: 
+1. 5.0 / 9 is evaluated first. Since 5.0 is a double, Java performs decimal division, resulting in approximately 0.5555555556.
+2. 70 - 32 equals 38.
+3. 0.5555555556 * 38 equals approximately 21.1111111111.
+
+Explanation: 
+The conversion is accurate because 5.0 is a double, so Java performs decimal division instead of integer division.
+
+-Conversion #3: 
+1. 70 is stored as a double, so doubleTempF is 70.0.
+2. 5 / 9 is evaluated first. Since both 5 and 9 are integers, Java performs integer division, resulting in 0.
+3. 0 * (70.0 - 32) equals 0.0.
+
+Explanation: 
+The conversion is inaccurate because 5 / 9 still uses integer division. Having doubleTempF as a double does not change the fact that 5 and 9 are both integers when that operation is performed.
+
+-Conversion #4: 
+1. (70.0 - 32) is evaluated first, resulting in 38.0.
+2. 38.0 * 5 equals 190.0.
+3. 190.0 / 9 equals approximately 21.1111111111.
+
+Explanation: 
+The conversion is accurate because the calculation begins with doubleTempF, which is a double. Therefore, the multiplication and division are performed using the decimal.
+
+*****************************
+Modify: What changes did you make to the inaccurate conversion(s)?
+
+For Conversion #1, I changed 5 / 9 to 5.0 / 9 so that Java uses double division instead of integer division.
+
+For Conversion #3, I changed 5 / 9 to 5.0 / 9 so that Java uses double division instead of integer division.
