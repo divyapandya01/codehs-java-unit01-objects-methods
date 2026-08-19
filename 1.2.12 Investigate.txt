@@ -1,0 +1,27 @@
+Predict:
+I think the values will not switch correctly because the value of one will replace its original value before two can use it.
+Run:
+Yes, it behaved as I expected. Both variables ended up having the value "Value two" instead of switching.
+
+1. What value is assigned to `one` on line 14?
+
+one is assigned the value "Value two".
+
+2. Based on your answer to #1, what value is 
+assigned to `two` in line 15? 
+two is assigned the value "Value two".
+
+3. Modify task. See Assignment description for instructions.
+
+
+4. What are the values of `one`, `two`, and `temp`
+on line 14 (`String temp = one`)?
+ one = "Value one", two = "Value two", temp = "Value one".
+
+5. What are the values of `one`, `two`, and `temp`
+on line 15 (`one = two`)?
+one = "Value two", two = "Value two", temp = "Value one".
+
+6. What are the values of `one`, `two`, and `temp`
+on line 16 (`two = temp`)?
+one = "Value two", two = "Value one", temp = "Value one".
