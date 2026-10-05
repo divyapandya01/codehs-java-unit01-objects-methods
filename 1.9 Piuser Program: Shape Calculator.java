@@ -15,7 +15,7 @@ public class Shapes
 
         printResults(rectangleArea, circleArea);
     }
-  
+
     public static double getLength(Scanner scanner)
     {
         System.out.print("Enter the length: ");
