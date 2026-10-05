@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class MyProgram
+{
+    public static void main(String[] args)
+    {
+        // Write your code here!
+        Scanner userIn = new Scanner(System.in);
+        
+        System.out.println("Enter the smallest side length: ");
+        double a = userIn.nextDouble();
+        
+        System.out.println("Enter the middle side length: ");
+        double b = userIn.nextDouble();
+        
+        System.out.println("Enter the largest side length: ");
+        double c = userIn.nextDouble();
+                
+        double angleA = TriangleHelper.getSmallestAngle(a, b, c);
+        double angleB = TriangleHelper.getMiddleAngle(a, b, c);
+        double angleC = TriangleHelper.getLargestAngle(a, b, c);
+        
+        double perimeter = TriangleHelper.getPerimeter(a, b, c);
+        double area = TriangleHelper.getArea(a, b, c);
+        String classification = TriangleHelper.triangleClassification(a, b, c);
+        
+        System.out.println("Smallest angle: " + angleA);
+        System.out.println("Middle angle: " + angleB);
+        System.out.println("Largest angle: " + angleC);
+        System.out.println("Perimeter: " + perimeter);
+        System.out.println("Area: " + area);
+        System.out.println("Classification: " + classification);
+    }
+}
